@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FluentScheduler")]
 [assembly: AssemblyDescription("A task scheduler that uses fluent interface to configure schedules. Useful for running cron jobs/automated tasks from your application.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Bia Creations")]
+[assembly: AssemblyCompany("Laughlin Constable")]
 [assembly: AssemblyProduct("FluentScheduler")]
-[assembly: AssemblyCopyright("Copyright © Bia Creations")]
+[assembly: AssemblyCopyright("Copyright ©")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FluentScheduler.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Bia Creations")]
+[assembly: AssemblyCompany("Laughlin Constable")]
 [assembly: AssemblyProduct("FluentScheduler.Tests")]
-[assembly: AssemblyCopyright("Copyright © Bia Creations")]
+[assembly: AssemblyCopyright("Copyright ©")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

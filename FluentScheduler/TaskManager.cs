@@ -52,17 +52,14 @@ namespace FluentScheduler
 		/// <returns>Schedule instance or null if the schedule does not exist</returns>
 		public static Schedule GetSchedule(string name)
 		{
-			if (_tasks != null)
+		    if (_tasks != null)
 			{
 				return _tasks.FirstOrDefault(x => x.Name == name);
 			}
-			else
-			{
-				return null;
-			}
+		    return null;
 		}
 
-		static TaskManager()
+	    static TaskManager()
 		{
 			TaskFactory = new TaskFactory();
 		}

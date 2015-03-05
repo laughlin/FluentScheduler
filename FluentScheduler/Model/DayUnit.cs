@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FluentScheduler.Model
+﻿namespace FluentScheduler.Model
 {
 	public class DayUnit
 	{

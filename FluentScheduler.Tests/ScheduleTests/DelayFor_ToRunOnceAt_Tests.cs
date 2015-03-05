@@ -1,6 +1,5 @@
 using System;
-using FluentScheduler.Model;
-using Moq;
+using FluentScheduler.Extensions;
 using NUnit.Framework;
 
 namespace FluentScheduler.Tests.ScheduleTests

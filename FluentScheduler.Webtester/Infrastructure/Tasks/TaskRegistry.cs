@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FluentScheduler.WebTester.Infrastructure.Tasks
+﻿namespace FluentScheduler.WebTester.Infrastructure.Tasks
 {
 	public class TaskRegistry : Registry
 	{

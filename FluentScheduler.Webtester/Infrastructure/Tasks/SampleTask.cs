@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Hosting;
+﻿using System.Web.Hosting;
 
 namespace FluentScheduler.WebTester.Infrastructure.Tasks
 {

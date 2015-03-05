@@ -1,4 +1,3 @@
-using System;
 using FluentScheduler.Model;
 using Moq;
 using NUnit.Framework;

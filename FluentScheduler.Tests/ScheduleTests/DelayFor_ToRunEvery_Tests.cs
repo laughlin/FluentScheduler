@@ -1,5 +1,4 @@
 using System;
-using FluentScheduler.Extensions;
 using NUnit.Framework;
 
 namespace FluentScheduler.Tests.ScheduleTests

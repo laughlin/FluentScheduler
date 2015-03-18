@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Threading;
 using FluentScheduler;
-using FluentScheduler.Extensions;
 using FluentScheduler.Model;
 
 namespace ConsoleTester
 {
 	class Program
 	{
-		static void Main()
+		static void Main(string[] args)
 		{
 			Console.WriteLine("Which the test you'd like to run (enter the test number):");
 			Console.WriteLine("1. DelayFor");
@@ -31,7 +30,7 @@ namespace ConsoleTester
 						EnableDisableTest();
 						break;
 					default:
-						Console.WriteLine("There's not test #{0}", testNum);
+						Console.WriteLine(string.Format("There's not test #{0}", testNum));
 						return;
 				}
 			}
@@ -90,14 +89,14 @@ namespace ConsoleTester
 			Console.WriteLine("Done initializing...");
 
 			// try to get the named schedule registered inside MyRegistry
-			var named = TaskManager.GetSchedule("named task");
+			FluentScheduler.Model.Schedule named = TaskManager.GetSchedule("named task");
 			if (named != null)
 			{
 				// success, execute it manually
 				named.Execute();
 			}
 
-			var removable = TaskManager.GetSchedule("removable task");
+			FluentScheduler.Model.Schedule removable = TaskManager.GetSchedule("removable task");
 			if (removable != null)
 			{
 				Console.WriteLine("before remove");
@@ -105,7 +104,7 @@ namespace ConsoleTester
 				Console.WriteLine("after remove");
 			}
 
-			var longRemovable = TaskManager.GetSchedule("long removable task");
+			FluentScheduler.Model.Schedule longRemovable = TaskManager.GetSchedule("long removable task");
 			if (longRemovable != null)
 			{
 				Console.WriteLine("before remove long running");
@@ -175,7 +174,10 @@ namespace ConsoleTester
 				Console.WriteLine("First task will fire first!");
 				Console.WriteLine("Waiting four seconds...");
 				Thread.Sleep(4000);
-			}).AndThen(() => Console.WriteLine("Then the second task fires!")).WithName("Multitask").ToRunNow();
+			}).AndThen(() =>
+			{
+				Console.WriteLine("Then the second task fires!");
+			}).WithName("Multitask").ToRunNow();
 
 			Schedule(() =>
 			{

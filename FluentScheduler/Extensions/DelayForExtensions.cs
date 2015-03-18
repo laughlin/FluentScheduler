@@ -1,6 +1,6 @@
 ﻿using FluentScheduler.Model;
 
-namespace FluentScheduler.Extensions
+namespace FluentScheduler
 {
 	/// <summary>
 	/// Extensions for DelayFor() functionality
